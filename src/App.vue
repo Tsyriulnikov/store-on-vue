@@ -1,12 +1,28 @@
 <template>
   <div id="app">
     <nav>
-      <router-link to="/">Home</router-link> |
+      <router-link to="/">Home</router-link>
+      |
       <router-link to="/about">About</router-link>
     </nav>
     <router-view/>
+    <Comp1/>
+    <Comp2/>
+
   </div>
 </template>
+
+<script>
+import Comp1 from '../src/components/Comp-1'
+import Comp2 from '../src/components/Comp-2'
+
+export default {
+  components: {
+    Comp1: Comp1,
+    Comp2: Comp2
+  }
+}
+</script>
 
 <style>
 #app {
