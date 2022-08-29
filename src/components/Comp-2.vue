@@ -1,5 +1,14 @@
 <template>
   <div>
-    <h2>Component-2</h2>
+    <h2>{{ message }}</h2>
   </div>
 </template>
+<script>
+export default {
+  data () {
+    return {
+      message: 'Hello fuck you'
+    }
+  }
+}
+</script>
