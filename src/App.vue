@@ -6,7 +6,7 @@
       <router-link to="/about">About</router-link>
     </nav>
     <router-view/>
-    <Comp1/>
+    <Comp1 :label="label"/>
     <Comp2/>
 
   </div>
@@ -20,6 +20,11 @@ export default {
   components: {
     Comp1: Comp1,
     Comp2: Comp2
+  },
+  data () {
+    return {
+      label: 'my label'
+    }
   }
 }
 </script>
